@@ -6,9 +6,7 @@ body {
   height: 100vh;
 }
 .top-nav {
-  background: repeating-linear-gradient(
-    120deg, #4B5320, #3B3C36 40px, #556B2F 80px
-  );
+  background: repeating-linear-gradient(174deg, #ededed, #7b7b7b 40px, #5d5d5d 80px);
   color: #fff;
   padding: 0 1.5rem;
   display: flex;
