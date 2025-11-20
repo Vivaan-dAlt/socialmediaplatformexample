@@ -1,1 +1,61 @@
-eerrrrrrr
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Static Social Media App</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Top Navigation -->
+  <nav class="top-nav">
+    <div class="nav-links">
+      <span class="nav-item">Home</span>
+      <span class="nav-item">News</span>
+      <span class="nav-item">Mentioned</span>
+    </div>
+    <button id="chat-btn" class="chat-btn">Chat</button>
+  </nav>
+  <div class="main-wrap">
+    <!-- Sidebar -->
+    <aside class="side-nav">
+      <button class="side-tab" data-page="home" id="tab-home" autofocus>For you</button>
+      <button class="side-tab" data-page="dms">DMs</button>
+      <button class="side-tab" data-page="servers">Servers</button>
+      <button class="side-tab" data-page="news">News</button>
+      <button class="side-tab" data-page="mentioned">Mentioned</button>
+    </aside>
+    <!-- Main Content Area -->
+    <main id="main-content" class="main-content"></main>
+  </div>
+  <!-- Chat Modal -->
+  <div id="chat-modal" class="chat-modal-overlay hidden">
+    <div class="chat-modal">
+      <div class="chat-modal-header">
+        <span>Direct Messages</span>
+        <span id="close-chat" class="chat-close">&times;</span>
+      </div>
+      <div class="chat-messages">Sample DM messages here…</div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+  <!-- Firebase (optional/config) -->
+  <!--
+  <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-storage-compat.js"></script>
+  <script>
+    const firebaseConfig = {
+      apiKey: "<YOUR-API-KEY>",
+      authDomain: "<YOUR-AUTH-DOMAIN>",
+      projectId: "<YOUR-PROJECT-ID>",
+      storageBucket: "<YOUR-BUCKET>",
+      messagingSenderId: "<YOUR-SENDER-ID>",
+      appId: "<YOUR-APP-ID>"
+    };
+    firebase.initializeApp(firebaseConfig);
+    const storage = firebase.storage();
+    // You can now use storage to store/retrieve files
+  </script>
+  -->
+</body>
+</html>
